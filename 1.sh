@@ -16,7 +16,7 @@ terraform init
 
 PROJECT_ID=$(gcloud config get-value project)
 
-terraform plan -out=tfplan -var 'project=$PROJECT_ID'
+terraform plan -out=tfplan -var "project=$PROJECT_ID"
 
 terraform apply tfplan
 
